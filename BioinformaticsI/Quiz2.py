@@ -1,4 +1,4 @@
-from library.PatternCount import hamming_distance
+from library.Distance import hamming_distance
 from library.PatternCount import approximate_pattern_count
 from library.Skew import minimum_skew
 from library.Neighbourhood import iterative_neighbours

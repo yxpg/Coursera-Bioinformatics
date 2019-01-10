@@ -1,4 +1,4 @@
-from library.PatternCount import hamming_distance
+from library.Distance import hamming_distance
 
 NUCLEOTIDES = ['A', 'T', 'C', 'G']
 

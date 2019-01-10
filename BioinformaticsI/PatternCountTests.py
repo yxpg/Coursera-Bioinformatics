@@ -16,24 +16,6 @@ def test3():
 
     print(' '.join(str(p) for p in pattern_positions_in_genome(pattern, genome)))    
 
-def test4():
-    p = 'TGACCCGTTATGCTCGAGTTCGGTCAGAGCGTCATTGCGAGTAGTCGTTTGCTTTCTCAAACTCC'
-    q = 'GAGCGATTAAGCGTGACAGCCCCAGGGAACCCACAAAACGTGATCGCAGTCCATCCGATCATACA'
-    print(hamming_distance(p, q)) 
-
-def test5():
-    p = 'GGGCCGTTGGT'
-    q = 'GGACCGTTGAC'
-    print(hamming_distance(p, q)) 
-
-def test6():
-    with open('dataset/dataset_9_3.txt') as file:
-        content = file.readlines()
-    p = [line.strip() for line in content][0]   
-    q = [line.strip() for line in content][1] 
-
-    print(hamming_distance(p, q))
-
 def test7():
     pattern = 'ATTCTGGA'
     genome = 'CGCCCGAATCCAGAACGCATTCCCATATTTCGGGACCACTGGCCTCCACGGTACGGACGTCAATCAAAT'

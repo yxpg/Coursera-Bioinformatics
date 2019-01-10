@@ -1,3 +1,5 @@
+from library.Distance import hamming_distance
+
 def pattern_count(pattern, text):
     count = 0
     for i in range(len(text) - len(pattern) + 1):
@@ -11,15 +13,6 @@ def pattern_positions_in_genome(pattern, genome):
         if genome[i : i + len(pattern)] == pattern:
             positions.append(i)
     return positions
-
-# Input:  Two strings p and q
-# Output: An integer value representing the Hamming Distance between p and q.
-def hamming_distance(p, q):
-    distance = 0
-    for i in range(len(p)):
-        if p[i] != q[i]:
-            distance += 1
-    return distance
 
 # Input:  Strings pattern and genome along with an integer distance
 # Output: A list containing all starting positions where pattern appears

@@ -1,6 +1,5 @@
 from library.Distance import hamming_distance
 from library.Distance import distance_between_pattern_and_strings
-from library.Distance import median_string
 
 def test1():
     p = 'TGACCCGTTATGCTCGAGTTCGGTCAGAGCGTCATTGCGAGTAGTCGTTTGCTTTCTCAAACTCC'
